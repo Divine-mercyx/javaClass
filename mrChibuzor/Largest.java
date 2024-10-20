@@ -5,6 +5,7 @@ public class Largest {
 		Scanner input = new Scanner(System.in);
 		boolean condition = true;
 		double largest = 0;
+		double smallest = 0;
 
 
 		while (condition) {
@@ -13,6 +14,9 @@ public class Largest {
 			
 			if (number > largest) {
 				largest = number;
+			} 
+			else if (number < smallest) {
+				smallest = number;
 			}
 			System.out.print("\ndo you want to continue 1 for(yes) / 2 for(no)");
 			int question = input.nextInt();
@@ -25,6 +29,6 @@ public class Largest {
 				System.out.println("\ninvalid choice!");
 			}
 		}
-		System.out.printf("the largest number is: %.0f", largest);
+		System.out.printf("the largest number is: %.0f%nthe smallest number is: %.0f", largest, smallest);
 	}
 }
