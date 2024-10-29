@@ -19,6 +19,8 @@ public class Triangle {
 			}
 			System.out.println();
 		}
+		System.out.println();
+
 
 		System.out.println("pattern C");
 		for (int a = base; a >= 1; a--) {
