@@ -5,21 +5,30 @@ public class Palindrome {
 		Scanner input = new Scanner(System.in);
 
 		System.out.print("enter a number to check if its a palindrome: ");
-		int number = input.nextInt();
+		String number = input.nextLine();
 
 		int numberReversed = 0;
-		int originalNumber = number;
 
-		while (number > 0) {
-			int remain = number % 10;
-			numberReversed = numberReversed * 10 + remain; 
-			number /= 10;
+
+		if (number.length() == 5) {
+			int numbers = Integer.parseInt(number);
+
+			int originalNumber = numbers;
+
+			while (numbers > 0) {
+				int remain = numbers % 10;
+				numberReversed = numberReversed * 10 + remain; 
+				numbers /= 10;
+			} 
+
+			if (numberReversed == originalNumber) {
+				System.out.println("number is a palindrome.");
+			} else {
+				System.out.println("number is not a palindrome");
+			}
 		} 
-
-		if (numberReversed == originalNumber) {
-			System.out.println("number is a palindrome.");
-		} else {
-			System.out.println("number is not a palindrome");
+		else {
+			System.out.println("not a five digit number");
 		}
 	}
 }
