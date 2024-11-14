@@ -66,27 +66,28 @@ public class Project {
            		 	System.out.print(questions[question][0]);
            		 	System.out.print(questions[question][1]);
 
-			 	System.out.print("\nresponse >>> ");
-			        String response = input.nextLine();
+			        	System.out.print("\nresponse >>> ");
+			          String response = input.nextLine();
+			          System.out.print("\033[H\033[2J"); 
+                System.out.flush();
 
 
 			        if (response.equalsIgnoreCase("A") || response.equalsIgnoreCase("B")) {
-					if (response.equalsIgnoreCase("A")) {
-						store[question] = questions[question][0];
-						numberOfA[section]++;
-					} else {
-						store[question] = questions[question][1];
-						numberOfB[section]++;
-					}
+					            if (response.equalsIgnoreCase("A")) {
+						            store[question] = questions[question][0];
+						            numberOfA[section]++;
+					            } else {
+						            store[question] = questions[question][1];
+						            numberOfB[section]++;
+					            }
 				
-				 }
+				     }
 
 			        else {
-					System.out.println("Expected A or B as response\nI know this is an error, please try again.");
-					question -= 4;
+					        System.out.println("Expected A or B as response\nI know this is an error, please try again.");
+					        question -= 4;
 				
 				 }
-
 			 System.out.println();
 			}
 		}
