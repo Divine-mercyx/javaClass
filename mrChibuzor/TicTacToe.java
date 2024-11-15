@@ -1,11 +1,17 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class TicTacToe {
     public static void main(String... args) {
       Scanner input = new Scanner(System.in);
+      Random myrand = new Random();
       int count = 1;
       boolean gameIsWon = false;
       String playerX  = "X";
+      int row1 = 0;
+      int column1 = 0;
+      int row2 = 0;
+      int column2 = 0;
       String playerO = "O";
       String[][] ticTacToe = {
       {" ", " ", " "},
@@ -15,42 +21,56 @@ public class TicTacToe {
       
 
       while (count <= 9 && !gameIsWon) {
- 
-          System.out.print("enter a row (0, 1 or 2) player x: ");
-          int row1 = input.nextInt();
-          System.out.print("enter a column (0, 1 or 2) player x: ");
-          int column1 = input.nextInt();
-          
-          
-          if (ticTacToe[row1][column1] == " ") {
-              ticTacToe[row1][column1] = "X";
-              System.out.print("\033[H\033[2J"); 
-              System.out.flush();
-              displayBoard(ticTacToe);
-              if (checkIfWon(ticTacToe, playerX)) {
-                  System.out.println("you have won");
-                  gameIsWon = true;
-                  break;
-              } else if (isFull(ticTacToe)) {
-                  System.out.println("draw");
-                  break;
-              } 
+      
+      
+          do {
+              row1 = myrand.nextInt(2);
+              System.out.print("enter a row (0, 1 or 2) player x: " + row1);
+              column1 = myrand.nextInt(2);
+              System.out.print("enter a column (0, 1 or 2) player x: " + column1);
 
-          } else {
-              System.out.println("position already filled");
-          }
+              if (ticTacToe[row1][column1] != " ") {
+                  System.out.println("position already filled");
+              }
+            } while(ticTacToe[row1][column1] != " ");
+            
+            
+                  ticTacToe[row1][column1] = "X";
+                  System.out.print("\033[H\033[2J"); 
+                  System.out.flush();
+                  displayBoard(ticTacToe);
+                  
+                  if (checkIfWon(ticTacToe, playerX)) {
+                      System.out.println("you have won");
+                      gameIsWon = true;
+                      break;
+                  } else if (isFull(ticTacToe)) {
+                      System.out.println("draw");
+                      break;
+                  } 
+            
+            
+            
+            
           
+      do {
+              System.out.print("enter a row (0, 1 or 2) player O: ");
+              row2 = input.nextInt();
+              System.out.print("enter a column (0, 1 or 2) player O: ");
+              column2 = input.nextInt();
+              
+              
+              if (ticTacToe[row2][column2] != " ") {
+                  System.out.println("position already filled");
+              }
+          } while(ticTacToe[row2][column2] != " ");
           
-          System.out.print("enter a row (0, 1 or 2) player O: ");
-          int row2 = input.nextInt();
-          System.out.print("enter a column (0, 1 or 2) player O: ");
-          int column2 = input.nextInt();
-          
-          if (ticTacToe[row2][column2] == " ") {
+                    
               ticTacToe[row2][column2] = "O";
               System.out.print("\033[H\033[2J"); 
               System.out.flush();
               displayBoard(ticTacToe);
+              
               if (checkIfWon(ticTacToe, playerO)) {
                   System.out.println("you have won");
                   gameIsWon = true;
@@ -59,13 +79,9 @@ public class TicTacToe {
                   System.out.println("draw");
                   break;
               } 
-
-
-              
-          } else {
-              System.out.println("position already filled");
-              return;
-          }
+          
+          
+          
           count++;
       }
     } 
@@ -93,6 +109,7 @@ public class TicTacToe {
         }
         return status;
     }
+    
     
     public static boolean isFull(String[][] board) {
         for (int row = 0; row < board.length; row++) {
