@@ -31,6 +31,9 @@ public class TicTacToe2 {
                 System.out.println("player " + playerX + " is the winner");
                 gameIsWon = true;
                 break;
+            } else if (isFull(tictactoe)) {
+                System.out.println("its a draw");
+                break;
             }
             
             
@@ -53,7 +56,11 @@ public class TicTacToe2 {
                 System.out.println("player " + playerO + " is the winner");
                 gameIsWon = true;
                 break;
+            } else if (isFull(tictactoe)) {
+                System.out.println("its a draw");
+                break;
             }
+            
             
             count++;
         }
@@ -87,5 +94,20 @@ public class TicTacToe2 {
         System.out.println("-------------");
         System.out.println("| " + board[0] + " | " + board[1] + " | " + board[2] + " |\n" + "-------------\n" + "| " + board[3] + " | " + board[4] + " | " + board[5] + " |\n" + "-------------\n" + "| " + board[6] + " | " + board[7] + " | " + board[8] + " |");
         System.out.println("-------------");
+    }
+    
+    
+    
+    public static boolean isFull(String[] board) {
+        int count = 0;
+        for (int row = 0; row < board.length; row++) {
+            if (board[row] != " ") {
+                count += 1;
+            }
+        }
+        if (count == 9) {
+            return true;
+        }
+        return false;
     }
 }
