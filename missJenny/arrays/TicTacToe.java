@@ -20,7 +20,7 @@ public class TicTacToe {
       };
       
 
-      while (count <= 9 && !gameIsWon) {
+      while (count < 9 && !gameIsWon) {
       
       
           do {
