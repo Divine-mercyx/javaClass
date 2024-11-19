@@ -5,21 +5,27 @@ public class TicTacToe2 {
     public static void main(String... args) {
         Scanner input = new Scanner(System.in);
         int index = 0;
+        
         String playerO = "\033[36mO\033[0m";
         String playerX  = "\033[32mX\033[0m";
+        
         boolean gameIsWon = false;
         int count = 0;
+        
         String[] tictactoe = {" ", " ", " ", " ", " ", " ", " ", " ", " "};
 
         displayBoard(tictactoe);
         
         while (count < 9 && !gameIsWon) {
+        
             do {
+            
                 System.out.print("\033[32mPlayer X\033[0m: where do you want to play (1 - 9): ");
                 index = input.nextInt();
                 
                 if (tictactoe[index - 1] != " ") System.out.println("position " + index + " already filled, try again");
                 input.nextLine();
+                
             } while (tictactoe[index - 1] != " ");
             
             tictactoe[index - 1] = "\033[32mX\033[0m";
@@ -28,23 +34,29 @@ public class TicTacToe2 {
             displayBoard(tictactoe);
             
             if (checkIfWon(tictactoe, playerX)) {
+            
                 System.out.println("player " + playerX + " is the winner");
                 gameIsWon = true;
                 break;
+                
             } else if (isFull(tictactoe)) {
+            
                 System.out.println("its a draw");
                 break;
+                
             }
             
             
             
             
             do {
+            
                 System.out.print("\033[36mPlayer O\033[0m: where do you want to play (1 - 9): ");
                 index = input.nextInt();
                 
                 if (tictactoe[index - 1] != " ") System.out.println("position " + index + " already filled, try again");
                 input.nextLine();
+                
             } while (tictactoe[index - 1] != " ");
             
             tictactoe[index - 1] = "\033[36mO\033[0m";
@@ -53,12 +65,16 @@ public class TicTacToe2 {
             displayBoard(tictactoe);
             
             if (checkIfWon(tictactoe, playerO)) {
+            
                 System.out.println("player " + playerO + " is the winner");
                 gameIsWon = true;
                 break;
+                
             } else if (isFull(tictactoe)) {
+            
                 System.out.println("its a draw");
                 break;
+                
             }
             
             

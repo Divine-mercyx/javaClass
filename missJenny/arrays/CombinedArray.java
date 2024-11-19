@@ -17,11 +17,10 @@ public class CombinedArray {
         
         for (int counter = 0; counter < first.length; counter++) {
             combined[counter] = first[counter];
-            count += 1;
         }
         
         for (int counter = 0; counter < second.length; counter++) {
-            combined[count + counter] = second[counter];
+            combined[count + 3] = second[counter];
         }
         
         return combined;
