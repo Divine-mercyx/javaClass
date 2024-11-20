@@ -1,11 +1,13 @@
 public class ArcheryGame {
     public static void main(String... args) {
-        int[][] archeryScores = {
-        {12, 34, 56},
-        {23, 54, 65},
-        {44, 65, 78},
-        {44, 65, 78}
-        };
+        int[][] archeryScores = new int[4][3];
+        
+        for (int row = 0; row < archeryScores.length; row++) {
+            for (int column = 0; column < archeryScores[row].length; column++) {
+                archeryScores[row][column] = (int) (Math.random() * 50);
+            }
+        }
+        
         
         System.out.println("archers\t\tfst\tsec\tthd\ttot");
         for (int row = 0; row < archeryScores.length; row++) {
