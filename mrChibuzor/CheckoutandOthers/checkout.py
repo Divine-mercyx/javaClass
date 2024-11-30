@@ -1,6 +1,9 @@
 #displayQuestions(String name, Scanner input, ArrayList<String> itemsBought, ArrayList<Integer> itemsNo, ArrayList<Double> itemPrice)
 
 def display_questions(name, items_bought, items_number, items_price):
+    if type(name) is not str or type(items_bought) is not list or type(items_number) is not list or type(items_price) is not list:
+        raise TypeError("inavlid input")
+        
     item_name = input("what did the user buy\n> ")
     items_bought.append(item_name)
     
@@ -85,10 +88,10 @@ DATE: 18-DEC-22 8:48:11PM
         print("amount too low")
     
     
-items_bought = []
-items_number = []
-items_price = []
-name = input("what is the customer name?\n> ")
-display_questions(name, items_bought, items_number, items_price)
+#items_bought = []
+#items_number = []
+#items_price = []
+#name = input("what is the customer name?\n> ")
+#display_questions(name, items_bought, items_number, items_price)
         
     
