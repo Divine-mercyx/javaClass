@@ -35,7 +35,7 @@ public class Checkout {
         System.out.println("Add more items?\n>");
         String option = input.nextLine();
         if (option.equalsIgnoreCase("yes")) {
-            getPurchased(name, input, itemsBought, itemsNo, itemPrice);
+            displayQuestions(name, input, itemsBought, itemsNo, itemPrice);
         } else {
         
         System.out.println("What is your name?\n>");
