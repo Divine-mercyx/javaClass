@@ -25,7 +25,7 @@ public class Pizza {
     }
     
     public static void displayOrderDetails(int counter, int slices, String pizzaType, double amount, int size, int pizzaSize) {
-        System.out.println("Number of boxes to buy = " + counter + " boxes (explanation " + pizzaType + " size contains " + pizzaSize + " slices per box, " + counter + " should be sufficient for " + size + " persons/person as it would contain " + slices + " in all)");
+        System.out.println("Number of boxes to buy = " + counter + " boxes (explanation " + pizzaType + " size contains " + pizzaSize + "\nslices per box, " + counter + " should be sufficient for " + size + " persons/person as it would contain " + slices + " in all)");
         System.out.println();
         System.out.println("Number of leftover slices = " + (slices - size) + " slices (explanation: after serving " + size + " slices, you should have " + (slices - size) + " slices left)");
         System.out.println();

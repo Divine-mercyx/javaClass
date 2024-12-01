@@ -55,7 +55,7 @@ public class MenstrualApp {
     }
     
     public void displayChoice(String name, Scanner input) {
-        delay();
+        
             System.out.println("""
             \033[93m
             1. Flow Date
@@ -68,6 +68,7 @@ public class MenstrualApp {
             int options = input.nextInt();
             switch (options) {
                 case 1: getNextMonth(name, input); break;
+                case 2: break;
                 case 4: displayMenstrualInfoTwo(name, input); break;
             }
     }
