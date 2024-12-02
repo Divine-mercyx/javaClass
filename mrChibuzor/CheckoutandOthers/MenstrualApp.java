@@ -9,7 +9,9 @@ public class MenstrualApp {
         Scanner input = new Scanner(System.in);
         MenstrualApp person = new MenstrualApp();
         
-        person.displayMenstrualInfo("Julia", input);
+        System.out.print("enter your name: ");
+        String name = input.nextLine();
+        person.displayMenstrualInfo(name, input);
     }
 
     public void displayMenstrualInfo(String name, Scanner input) {
@@ -52,56 +54,86 @@ public class MenstrualApp {
             \033[0m
             """);
             displayChoice(name, input);
-    }
-    
-    public void displayChoice(String name, Scanner input) {
+    } 
+
+    public void displayChoice(String name, Scanner input) {  
+        System.out.println("""  
+            \033[93m  
+            1. Flow Date  
+            2. Safe Periods  
+            3. Ovulation Dates  
+            4. Back  
+            \033[0m  
+            """);  
+        System.out.print("> ");  
+        int option = input.nextInt();  
+        switch (option) {  
+            case 1: getNextMonth(name, input);  break;
+            case 2: calculateSafePeriods(name, input); break; 
+            case 4: break;
+            default: System.out.println("Invalid option. Please try again.");  break;
+        }  
+    } 
+
+    private void getNextMonth(String name, Scanner input) {  
+        int[] date = getInputDate(input);  
+        calculateAndDisplayNextFlowDate(date[0], date[1], date[2], name, input);  
+    }  
+
+    private int[] getInputDate(Scanner input) {  
+        System.out.print("Enter the month: ");  
+        int month = input.nextInt();  
+        System.out.print("Enter the day: ");  
+        int day = input.nextInt();  
+        System.out.print("Enter the year: ");  
+        int year = input.nextInt();  
+        return new int[]{month, day, year};  
+    }  
+
+    private void calculateAndDisplayNextFlowDate(int month, int day, int year, String name, Scanner input) {  
+        Calendar cal = Calendar.getInstance();  
+        cal.set(year, month - 1, day); 
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
+        String normalDate = sdf.format(cal.getTime());  
+
+        cal.add(Calendar.DAY_OF_MONTH, 28); 
+        String nextFlowDate = sdf.format(cal.getTime());  
+
+        System.out.println("First flow date: " + normalDate);  
+        System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  
+                " (the range might differ, sometimes over or under 28 days)");  
         
-            System.out.println("""
-            \033[93m
-            1. Flow Date
-            2. Safe periods
-            3. Ovulation dates
-            4. back
-            \033[0m
-            """);
-            System.out.print("> ");
-            int options = input.nextInt();
-            switch (options) {
-                case 1: getNextMonth(name, input); break;
-                case 2: break;
-                case 4: displayMenstrualInfoTwo(name, input); break;
-            }
-    }
-    
-    public void getNextMonth(String name, Scanner input) {
-        System.out.print("enter the month: ");
-        int month = input.nextInt();
-        System.out.print("enter the day: ");
-        int day = input.nextInt();
-        System.out.print("enter the year: ");
-        int year = input.nextInt();
-        calculateDate(month, day, year, input, name);
-    }
-    
-    public void calculateDate(int month, int day, int year, Scanner input, String name) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.MONTH, month - 1); // January
-        cal.set(Calendar.DAY_OF_MONTH, day);
-        cal.set(Calendar.YEAR, year);
-
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String defaultDate = sdf.format(cal.getTime());
-
-        cal.add(Calendar.DAY_OF_MONTH, 28);
-        String plus28Days = sdf.format(cal.getTime());
-
-        System.out.println("first flow date: " + defaultDate);
-        System.out.println("next flow date will be in 28 days: " + plus28Days + " (the range might differ sometimes might be over 28 or lower)");
         displayChoice(name, input);
-    }
-    
+    }  
+
+    private void calculateSafePeriods(String name, Scanner input) {  
+        int[] date = getInputDate(input);  
+        displaySafePeriods(date[0], date[1], date[2]);  
+        displayChoice(name, input);  
+    }  
+
+    private void displaySafePeriods(int month, int day, int year) {  
+        Calendar cal = Calendar.getInstance();  
+        cal.set(year, month - 1, day);  
+        
+
+        cal.add(Calendar.DAY_OF_MONTH, 7);
+        String endOfFlow = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
+
+        cal.add(Calendar.DAY_OF_MONTH, 7);
+        String startOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
+
+        cal.add(Calendar.DAY_OF_MONTH, 6);
+        String endOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
+
+        System.out.println("Safe Periods:");  
+        System.out.println("From: " + endOfFlow + " to: " + startOfOvulation + " (before ovulation)");  
+        System.out.println("From: " + endOfOvulation + " to: " + new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime()) + " (after ovulation)");  
+    }  
+
     public static void delay() {
-        for (double delay = 0; delay < 1000000002; delay++) {
+        for (double delay = 0; delay < 100000002; delay++) {
         }
         System.out.print("\033[H\033[2J");
         System.out.flush();
