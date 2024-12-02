@@ -94,11 +94,11 @@ public class MenstrualApp {
         Calendar cal = Calendar.getInstance();  
         cal.set(year, month - 1, day); 
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");  
          
 
         cal.add(Calendar.DAY_OF_MONTH, 28); 
-        String nextFlowDate = sdf.format(cal.getTime());  
+        String nextFlowDate = dateFormat.format(cal.getTime());  
 
         System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  
                 " (the range might differ, sometimes over or under 28 days)");  
