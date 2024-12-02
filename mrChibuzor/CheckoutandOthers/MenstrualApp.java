@@ -70,7 +70,7 @@ public class MenstrualApp {
         switch (option) {  
             case 1: getNextMonth(name, input);  break;
             case 2: calculateSafePeriods(name, input); break; 
-            case 4: break;
+            case 4: displayMenstrualInfoTwo(name, input); break;
             default: System.out.println("Invalid option. Please try again.");  break;
         }  
     } 
@@ -95,12 +95,11 @@ public class MenstrualApp {
         cal.set(year, month - 1, day); 
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
-        String normalDate = sdf.format(cal.getTime());  
+         
 
         cal.add(Calendar.DAY_OF_MONTH, 28); 
         String nextFlowDate = sdf.format(cal.getTime());  
 
-        System.out.println("First flow date: " + normalDate);  
         System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  
                 " (the range might differ, sometimes over or under 28 days)");  
         
@@ -124,16 +123,12 @@ public class MenstrualApp {
         cal.add(Calendar.DAY_OF_MONTH, 7);
         String startOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
 
-        cal.add(Calendar.DAY_OF_MONTH, 6);
-        String endOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
-
-        System.out.println("Safe Periods:");  
-        System.out.println("From: " + endOfFlow + " to: " + startOfOvulation + " (before ovulation)");  
-        System.out.println("From: " + endOfOvulation + " to: " + new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime()) + " (after ovulation)");  
+        System.out.println("Safe Period:");  
+        System.out.println("From: " + endOfFlow + " to: " + startOfOvulation + " (before ovulation)");
     }  
 
     public static void delay() {
-        for (double delay = 0; delay < 100000002; delay++) {
+        for (double delay = 0; delay < 1000000002; delay++) {
         }
         System.out.print("\033[H\033[2J");
         System.out.flush();
