@@ -35,7 +35,7 @@ public class MenstrualApp {
         displayChoice(name, input);
     }
     
-        public void displayMenstrualInfoTwo(String name, Scanner input) {
+        private void displayMenstrualInfoTwo(String name, Scanner input) {
             System.out.println("\033[93mWelcome back " + name + "\033[0m");
             delay();
             System.out.println("""
@@ -100,8 +100,7 @@ public class MenstrualApp {
         cal.add(Calendar.DAY_OF_MONTH, 28); 
         String nextFlowDate = dateFormat.format(cal.getTime());  
 
-        System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  
-                " (the range might differ, sometimes over or under 28 days)");  
+        System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  " (the range might differ, sometimes over or under 28 days)");  
         
         displayChoice(name, input);
     }  
