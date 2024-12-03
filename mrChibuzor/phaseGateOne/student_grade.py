@@ -159,5 +159,5 @@ def get_best_graduating_student(students):
                 smallest_subject_index = column
     return [[largest, largest_student_index, largest_subject_index], [smallest, smallest_student_index, smallest_subject_index]]
 
-collect_scores(4, 2, [])
+
 

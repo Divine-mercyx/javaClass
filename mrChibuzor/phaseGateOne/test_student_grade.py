@@ -9,3 +9,6 @@ class TestCollectScoresFunction(TestCase):
         actual = collect_scores(2, 2, [])
         expected = [[1, 2]]
         self.assertEqual(actual, expected)
+        
+    def test_that_collect_scores_function_does_not_accept_nothing(self):
+        self.assertRaises(TypeError, collect_scores, None, None, [])
