@@ -100,12 +100,28 @@ def hardest_and_easiest_subject(students):
     print("===============================================================")
     print("Class Summary")
     print("===============================================================")
-    overall_students = get_best_graduating_student(students)
-    print(f"Best graduating student is:  student {overall_students[0][1]} scoring {overall_students[0][0]}")
-    print(f"worst graduating student is:  student {overall_students[1][1]} scoring {overall_students[1][0]}")
+    overall_students = overall_student(students)
+    print(f"Best graduating student is:  student {overall_students[0][1] + 1} scoring {overall_students[0][0]}")
+    print("===============================================================")
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    print(f"worst graduating student is:  student {overall_students[1][1] + 1} scoring {overall_students[1][0]}")
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    values = get_total_and_average_score(students)
+    print(f"class total score is: {values[0]}\nclass average score is: {values[1]}")
     
 
-def overall_students(students):
+def get_total_and_average_score(students):
+    total = 0
+    for index in range(len(students)):
+        for count in range(len(students[index])):
+            total += students[index][count]
+    total_and_average = [total, (total / len(students))]
+    return total_and_average
+
+
+
+
+def overall_student(students):
     largest_total = students[0][1]
     best_student_index = 0
     worst_student_index = 0
@@ -115,7 +131,7 @@ def overall_students(students):
         for count in range(len(students[index])):
             total += students[index][count]
         if total > largest_total:
-            largest_total = 0
+            largest_total = total
             best_student_index = index
         elif total < smallest_total:
             smallest_total = total
