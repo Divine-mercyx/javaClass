@@ -144,9 +144,50 @@ public class StudentGrade {
                 easiest = row;
             }
         }
-        System.out.println("the hardest subject is subject " + (hardest + 1) + "\nthe easiest subject is subject " + (easiest + 1));
-        System.out.println(Arrays.toString(numbers));
+        int[] scores = numberOfPasses(hardest, numbers);
+        int[] scoresTwo = numberOfPasses(easiest, numbers);
+        System.out.println("the hardest subject is subject " + (hardest + 1) + " with " + scores[1] + " failures" + "\nthe easiest subject is subject " + (easiest + 1) + " with " + scoresTwo[1] + " failures");
+        int[][] studentsGradesOverall = getBestgraduatingStudent(numbers);
+        System.out.println("the overall highest score is scored by student " + (studentsGradesOverall[0][1] + 1) + " in subject " + (studentsGradesOverall[0][2] + 1) + " scoring " + studentsGradesOverall[0][0]);
+        System.out.println("the overall lowest score is scored by student " + (studentsGradesOverall[1][1] + 1) + " in subject " + (studentsGradesOverall[1][2] + 1) + " scoring " + studentsGradesOverall[1][0]);
+        System.out.println("===============================================================");
+        System.out.println();
+        System.out.println("Class summary");
+        System.out.println("===============================================================");
+        
+        
+        
     }
     
+    public int[][] getBestgraduatingStudent(int[][] numbers) {
+        int largest = numbers[0][0];
+        int smallest = numbers[0][0];
+        int largeStudentIndex = 0;
+        int subjectIndex = 0;
+        int smallestStudentIndex = 0;
+        for (int row = 0; row < numbers.length; row++) {
+            for (int column = 0; column < numbers[row].length; column++) {
+                if (numbers[row][column] > largest) {
+                    largest = numbers[row][column];
+                    largeStudentIndex = row;
+                    subjectIndex = column;
+                } else {
+                    smallest = numbers[row][column];
+                    smallestStudentIndex = row;
+                    subjectIndex = column;
+                }
+            }
+        }
+        int[][] values = {
+        {largest, largeStudentIndex, subjectIndex}, 
+        {smallest, smallestStudentIndex, subjectIndex}
+        };
+        return values;
+    }
+    
+    
+    public int getTotalAndAverageScore(int[][] numbers) {
+        int totalAndAverage
+    }
     
 }
