@@ -154,6 +154,15 @@ public class StudentGrade {
         System.out.println();
         System.out.println("Class summary");
         System.out.println("===============================================================");
+        int[][] overallStudents = overallStudent(numbers);
+        System.out.println("Best graduating student is: student " + (overallStudents[0][1] + 1) + " scoring " + overallStudents[0][0]);
+        System.out.println();
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println("Worst graduating student is: student " + (overallStudents[1][1] + 1) + " scoring " + overallStudents[1][0]);
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        int[] totalAndAverage = getTotalAndAverageScore(numbers);
+        System.out.println("class total score is: " + totalAndAverage[0]);
+        System.out.println("class average score is: " + totalAndAverage[1]);
         
         
         
@@ -163,31 +172,64 @@ public class StudentGrade {
         int largest = numbers[0][0];
         int smallest = numbers[0][0];
         int largeStudentIndex = 0;
-        int subjectIndex = 0;
+        int largesubjectIndex = 0;
+        int smallsubjectIndex = 0;
         int smallestStudentIndex = 0;
         for (int row = 0; row < numbers.length; row++) {
             for (int column = 0; column < numbers[row].length; column++) {
                 if (numbers[row][column] > largest) {
                     largest = numbers[row][column];
                     largeStudentIndex = row;
-                    subjectIndex = column;
-                } else {
+                    largesubjectIndex = column;
+                } else if (numbers[row][column] < smallest){
                     smallest = numbers[row][column];
                     smallestStudentIndex = row;
-                    subjectIndex = column;
+                    smallsubjectIndex = column;
                 }
             }
         }
         int[][] values = {
-        {largest, largeStudentIndex, subjectIndex}, 
-        {smallest, smallestStudentIndex, subjectIndex}
+        {largest, largeStudentIndex, largesubjectIndex}, 
+        {smallest, smallestStudentIndex, smallsubjectIndex}
         };
         return values;
     }
     
     
-    public int getTotalAndAverageScore(int[][] numbers) {
-        int totalAndAverage
+    public int[] getTotalAndAverageScore(int[][] numbers) {
+        int total = 0;
+        for (int row = 0; row < numbers.length; row++) {
+            for (int column = 0; column < numbers[row].length; column++) {
+                total += numbers[row][column];
+            }
+        }
+        int[] totalAndAverage = {total, (total / numbers.length)};
+        return totalAndAverage;
+    }
+    
+    public int[][] overallStudent(int[][] numbers) {
+        int largestTotal = numbers[0][1];
+        int bestStudentIndex = 0;
+        int worstStudentIndex = 0;
+        int smallestTotal = numbers[0][1];
+        int total = 0;
+        for (int row = 0; row < numbers.length; row++) {
+            for (int column = 0; column < numbers[row].length; column++) {
+                total += numbers[row][column];
+            }
+            if (total > largestTotal) {
+                largestTotal = total;
+                bestStudentIndex = row;
+            } else if (total < smallestTotal) {
+                smallestTotal = total;
+                worstStudentIndex = row;
+            }
+        }
+        int[][] values = {
+        {largestTotal, bestStudentIndex},
+        {smallestTotal, worstStudentIndex}
+        };
+        return values;
     }
     
 }
