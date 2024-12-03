@@ -92,27 +92,46 @@ public class StudentGrade {
     }
     
     public void decideForEachSubject(int row, int[][] numbers) {
-        int largest = 0;
+        int largest = numbers[0][row];
         int largestIndex = 0;
         int smallest = 0;
         int smallestIndex = 0;
         int total = 0;
         for (int column = 0; column < numbers.length; column++) {
-            if (numbers[column][row] > largest) {
+            if (numbers[column][row] >= largest) {
                 largest = numbers[column][row];
                 largestIndex = column;
             }
-            else if (numbers[column][row] < smallest) {
-                numbers[column][row] = smallest;
+            else {
+                smallest =  numbers[column][row];
                 smallestIndex = column;
             }
             total += numbers[column][row];
         }
         System.out.println("Subject " + (row + 1));
-        System.out.println("highest scoring is:       student " + (largestIndex + 1) + " scoring: " + largest);
-        System.out.println("lowest scoring is:       student " + (smallestIndex + 1) + " scoring: " + smallest + "\nTotal score: " + total);
+        System.out.println("highest scoring is:   student " + (largestIndex + 1) + " scoring: " + largest);
+        System.out.println("lowest scoring is:   student " + (smallestIndex + 1) + " scoring: " + smallest + "\nTotal score: " + total + "\nAverage score: " + (total / numbers.length));
+        int[] passAndFail = numberOfPasses(row, numbers);
+        System.out.println("Number of passes: " + passAndFail[0] + "\nNumber of fails: " + passAndFail[1]);
         System.out.println();
+        
     }
+    
+    public int[] numberOfPasses(int row, int[][] numbers) {
+        int pass = 0;
+        int fail = 0;
+        int subject = row;
+        for (int column = 0; column < numbers.length; column++) {
+            if (numbers[column][row] >= 50) {
+                pass++;
+            }
+            else fail++;
+        }
+        int[] value = {pass, fail, subject};
+        return value;
+    }
+    
+    
     
     
 }
