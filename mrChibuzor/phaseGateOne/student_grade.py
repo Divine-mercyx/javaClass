@@ -95,7 +95,31 @@ def hardest_and_easiest_subject(students):
     scores = number_of_passes(hardest, students)
     scoreTwo = number_of_passes(easiest, students)
     print(f"the hardest subject is subject {hardest + 1} with {scores[1]} failures\nthe easiest subject is subject {easiest + 1} with {scoreTwo[1]} failures")
+    values = get_best_graduating_student(students)
+    print(f"the overall highest score is scored by student {values[0][1] + 1} in subject {values[0][2] + 1} scoring {values[0][0]}\nthe overall lowest score is scored by student {values[1][1] + 1} in subject {values[1][2] + 1} scoring {values[1][0]}")
+    print("===============================================================")
+    print("Class Summary")
+    print("===============================================================")
+    
 
+def get_best_graduating_student(students):
+    largest = students[0][0]
+    smallest = students[0][0]
+    largest_student_index = 0
+    smallest_student_index = 0
+    largest_subject_index = 0
+    smallest_subject_index = 0
+    for index in range(len(students)):
+        for column in range(len(students[index])):
+            if students[index][column] > largest:
+                largest = students[index][column]
+                largest_student_index = index
+                largest_subject_index = column
+            elif students[index][column] < smallest:
+                smallest = students[index][column]
+                smallest_student_index = index
+                smallest_subject_index = column
+    return [[largest, largest_student_index, largest_subject_index], [smallest, smallest_student_index, smallest_subject_index]]
 
     """public void hardestSubject(int[][] numbers) {
         int[] passAndFail;
