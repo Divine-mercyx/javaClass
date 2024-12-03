@@ -89,6 +89,7 @@ public class StudentGrade {
         for (int row = 0; row < numbers[0].length; row++) {
             decideForEachSubject(row, numbers);
         }
+        hardestSubject(numbers);
     }
     
     public void decideForEachSubject(int row, int[][] numbers) {
@@ -114,7 +115,6 @@ public class StudentGrade {
         int[] passAndFail = numberOfPasses(row, numbers);
         System.out.println("Number of passes: " + passAndFail[0] + "\nNumber of fails: " + passAndFail[1]);
         System.out.println();
-        
     }
     
     public int[] numberOfPasses(int row, int[][] numbers) {
@@ -131,7 +131,22 @@ public class StudentGrade {
         return value;
     }
     
-    
+    public void hardestSubject(int[][] numbers) {
+        int[] passAndFail;
+        int hardest = 0;
+        int easiest = 0;
+        for (int row = 0; row < numbers[0].length; row++) {
+            passAndFail = numberOfPasses(row, numbers);
+            if (passAndFail[1] >= numbers[0].length) {
+                hardest = row;
+            }
+            else {
+                easiest = row;
+            }
+        }
+        System.out.println("the hardest subject is subject " + (hardest + 1) + "\nthe easiest subject is subject " + (easiest + 1));
+        System.out.println(Arrays.toString(numbers));
+    }
     
     
 }
