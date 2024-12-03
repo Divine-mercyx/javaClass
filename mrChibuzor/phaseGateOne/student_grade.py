@@ -100,7 +100,29 @@ def hardest_and_easiest_subject(students):
     print("===============================================================")
     print("Class Summary")
     print("===============================================================")
+    overall_students = get_best_graduating_student(students)
+    print(f"Best graduating student is:  student {overall_students[0][1]} scoring {overall_students[0][0]}")
+    print(f"worst graduating student is:  student {overall_students[1][1]} scoring {overall_students[1][0]}")
     
+
+def overall_students(students):
+    largest_total = students[0][1]
+    best_student_index = 0
+    worst_student_index = 0
+    smallest_total = students[0][1]
+    total = 0
+    for index in range(len(students)):
+        for count in range(len(students[index])):
+            total += students[index][count]
+        if total > largest_total:
+            largest_total = 0
+            best_student_index = index
+        elif total < smallest_total:
+            smallest_total = total
+            worst_student_index = row
+    return [[largest_total, best_student_index], [smallest_total, worst_student_index]]
+
+
 
 def get_best_graduating_student(students):
     largest = students[0][0]
