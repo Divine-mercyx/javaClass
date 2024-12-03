@@ -4,7 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StudentGradeTest {
-
+    
+    @Test
+    public void TestThatStudentsNumberAndSubjectNumberExist() {
+        StudentGrade studentGrade = new StudentGrade();
+    }
     @Test
     public void getReturnedStudentsNumberAndSubjectNumber() {
         StudentGrade studentGrade = new StudentGrade();
