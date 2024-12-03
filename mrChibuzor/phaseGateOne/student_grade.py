@@ -159,41 +159,5 @@ def get_best_graduating_student(students):
                 smallest_subject_index = column
     return [[largest, largest_student_index, largest_subject_index], [smallest, smallest_student_index, smallest_subject_index]]
 
-    """public void hardestSubject(int[][] numbers) {
-        int[] passAndFail;
-        int hardest = 0;
-        int easiest = 0;
-        for (int row = 0; row < numbers[0].length; row++) {
-            passAndFail = numberOfPasses(row, numbers);
-            if (passAndFail[1] >= numbers[0].length) {
-                hardest = row;
-            }
-            else {
-                easiest = row;
-            }
-        }
-        int[] scores = numberOfPasses(hardest, numbers);
-        int[] scoresTwo = numberOfPasses(easiest, numbers);
-        System.out.println("the hardest subject is subject " + (hardest + 1) + " with " + scores[1] + " failures" + "\nthe easiest subject is subject " + (easiest + 1) + " with " + scoresTwo[1] + " failures");
-        int[][] studentsGradesOverall = getBestgraduatingStudent(numbers);
-        System.out.println("the overall highest score is scored by student " + (studentsGradesOverall[0][1] + 1) + " in subject " + (studentsGradesOverall[0][2] + 1) + " scoring " + studentsGradesOverall[0][0]);
-        System.out.println("the overall lowest score is scored by student " + (studentsGradesOverall[1][1] + 1) + " in subject " + (studentsGradesOverall[1][2] + 1) + " scoring " + studentsGradesOverall[1][0]);
-        System.out.println("===============================================================");
-        System.out.println();
-        System.out.println("Class summary");
-        System.out.println("===============================================================");
-        int[][] overallStudents = overallStudent(numbers);
-        System.out.println("Best graduating student is: student " + (overallStudents[0][1] + 1) + " scoring " + overallStudents[0][0]);
-        System.out.println();
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        System.out.println("Worst graduating student is: student " + (overallStudents[1][1] + 1) + " scoring " + overallStudents[1][0]);
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        int[] totalAndAverage = getTotalAndAverageScore(numbers);
-        System.out.println("class total score is: " + totalAndAverage[0]);
-        System.out.println("class average score is: " + totalAndAverage[1]);
-        
-        
-        
-    }"""
 collect_scores(4, 2, [])
 
