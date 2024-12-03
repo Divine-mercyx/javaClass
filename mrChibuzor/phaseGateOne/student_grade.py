@@ -16,9 +16,7 @@ def collect_scores(student_number: int, subject_number: int, students: list):
                 count -= 1
             count += 1
         students.append(scores)
-        print()
+        return students
         
     
 
-students = []
-collect_scores(4, 2, students)
