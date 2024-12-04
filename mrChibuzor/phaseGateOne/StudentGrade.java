@@ -46,22 +46,20 @@ public class StudentGrade {
                     column--;
                 }
             }
+          clear_space();
         }
         return numbers;
     }
     
+    public void clear_space() {
+        System.out.print("\033[H\033[2J"); 
+        System.out.flush();
+    }
     
     public  void displaySummary(int[][] numbers) {
-        
-        
-        int numberStudents = numbers.length;
-        int[] totals = new int[numberStudents];
-        double[] averages = new double[numberStudents];
-        
-        int position = numbers.length;
-        System.out.println("=============================================================================");
+        display_lines();
         displayHeader(numbers);
-        System.out.println("=============================================================================");
+        display_lines();
         for (int row = 0; row < numbers.length; row++) {
             int total = 0;
             System.out.print("Student " + (row + 1) + "\t");
@@ -69,16 +67,18 @@ public class StudentGrade {
                 System.out.print(numbers[row][column] + "\t");
                 total += numbers[row][column];
             }
-            totals[row] = total;
-            averages[row] = (double) total / numbers[row].length;
             int lengths = numbers[row].length;
+            int position = getPositions(row, numbers);
             double average = total / lengths;
-            System.out.println(total + "\t" + average + "\t  " + (position--));
+            System.out.println(total + "\t" + average + "\t  " + (position));
         }
-        
-        System.out.println("=============================================================================");
-        System.out.println("=============================================================================");
+        display_lines();
+        display_lines();
         subjectSummary(numbers);
+    }
+    
+    public void display_lines() {
+        System.out.println("=============================================================================");
     }
 
     public void displayHeader(int[][] numbers) {
@@ -90,6 +90,27 @@ public class StudentGrade {
             System.out.println("TOT\tAVE\tPOS");
             break;
         }
+    }
+    
+    
+    public int getTotal(int index, int[][] numbers) {
+        int total = 0;
+        for (int column = 0; column < numbers[index].length; column++) {
+            total += numbers[index][column];
+        }
+        return total;
+    }
+    
+    public int getPositions(int row, int[][] numbers) {
+        int student = getTotal(row, numbers);
+        int position = 1;
+        for (int index = 0; index < numbers.length; index++) {
+            int otherStudents = getTotal(index, numbers);
+            if (index != row && student < otherStudents) {
+                position++;
+            }
+        }
+        return position;
     }
     
     
@@ -160,15 +181,16 @@ public class StudentGrade {
         int[][] studentsGradesOverall = getBestgraduatingStudent(numbers);
         System.out.println("the overall highest score is scored by student " + (studentsGradesOverall[0][1] + 1) + " in subject " + (studentsGradesOverall[0][2] + 1) + " scoring " + studentsGradesOverall[0][0]);
         System.out.println("the overall lowest score is scored by student " + (studentsGradesOverall[1][1] + 1) + " in subject " + (studentsGradesOverall[1][2] + 1) + " scoring " + studentsGradesOverall[1][0]);
-        System.out.println("===============================================================");
+        display_lines();
         System.out.println();
         System.out.println("Class summary");
-        System.out.println("===============================================================");
-        int[][] overallStudents = overallStudent(numbers);
-        System.out.println("Best graduating student is: student " + (overallStudents[0][1] + 1) + " scoring " + overallStudents[0][0]);
+        display_lines();
+        //int[][] overallStudents = overallStudent(numbers);
+        int[][] values = overallBestStudents(numbers);
+        System.out.println("Best graduating student is: student " + (values[0][1] + 1) + " scoring " + values[0][0]);
         System.out.println();
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        System.out.println("Worst graduating student is: student " + (overallStudents[1][1] + 1) + " scoring " + overallStudents[1][0]);
+        System.out.println("Worst graduating student is: student " + (values[1][1] + 1) + " scoring " + values[1][0]);
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         int[] totalAndAverage = getTotalAndAverageScore(numbers);
         System.out.println("class total score is: " + totalAndAverage[0]);
@@ -239,6 +261,25 @@ public class StudentGrade {
         {largestTotal, bestStudentIndex},
         {smallestTotal, worstStudentIndex}
         };
+        return values;
+    }
+    
+    public int[][] overallBestStudents(int[][] numbers) {
+        int student = getTotal(0, numbers);
+        int largest = student;
+        int smallest = student;
+        int worstStudent = 0;
+        int bestStudent = 0;
+        for (int row = 0; row < numbers.length; row++) {
+            int otherStudents = getTotal(row, numbers);
+            if (otherStudents > largest) {
+                largest = otherStudents; bestStudent = row;
+            }
+            else if (otherStudents < smallest) {
+                smallest = otherStudents; worstStudent = row;
+            }
+        }
+        int[][] values = {{largest, bestStudent}, {smallest, worstStudent}};
         return values;
     }
     

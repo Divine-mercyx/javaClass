@@ -31,10 +31,27 @@ def display_summary(students: list):
         for count in range(len(students[index])):
             print(f"{students[index][count]}\t", end="")
             total += students[index][count]
-        position -= 1
-        print(f"{total}\t{(total / len(students[index])):.1f}\t{position + 1}")
+        position = get_position(index, students)
+        print(f"{total}\t{(total / len(students[index])):.1f}\t{position:>3}")
         print()
     subject_summary(students)
+    
+    
+def get_total(row: int, students: list):
+    total = 0
+    for index in range(len(students[row])):
+        total += students[row][index]
+    return total
+    
+    
+def get_position(row: list, students: list):
+    student = get_total(row, students)
+    position = 1
+    for index in range(len(students)):
+        other_students = get_total(index, students)
+        if index != row and student < other_students:
+            position += 1
+    return position
         
 def display_header(students: list):
     print("Students\t", end="")
@@ -160,4 +177,4 @@ def get_best_graduating_student(students):
     return [[largest, largest_student_index, largest_subject_index], [smallest, smallest_student_index, smallest_subject_index]]
 
 
-
+collect_scores(3, 3, [])
