@@ -53,6 +53,11 @@ public class StudentGrade {
     
     public  void displaySummary(int[][] numbers) {
         
+        
+        int numberStudents = numbers.length;
+        int[] totals = new int[numberStudents];
+        double[] averages = new double[numberStudents];
+        
         int position = numbers.length;
         System.out.println("=============================================================================");
         displayHeader(numbers);
@@ -64,15 +69,18 @@ public class StudentGrade {
                 System.out.print(numbers[row][column] + "\t");
                 total += numbers[row][column];
             }
+            totals[row] = total;
+            averages[row] = (double) total / numbers[row].length;
             int lengths = numbers[row].length;
             double average = total / lengths;
             System.out.println(total + "\t" + average + "\t  " + (position--));
         }
+        
         System.out.println("=============================================================================");
         System.out.println("=============================================================================");
         subjectSummary(numbers);
     }
-    
+
     public void displayHeader(int[][] numbers) {
         System.out.print("Students\t");
         for (int row = 0; row < numbers.length; row++) {
@@ -84,6 +92,7 @@ public class StudentGrade {
         }
     }
     
+    
     public void subjectSummary(int[][] numbers) {
         System.out.println("Subject summary");
         for (int row = 0; row < numbers[0].length; row++) {
@@ -91,6 +100,7 @@ public class StudentGrade {
         }
         hardestSubject(numbers);
     }
+    
     
     public void decideForEachSubject(int row, int[][] numbers) {
         int largest = numbers[0][row];
