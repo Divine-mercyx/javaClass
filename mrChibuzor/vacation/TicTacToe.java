@@ -26,7 +26,11 @@ public class TicTacToe {
     public static void displayBoard() {
         for (int index = 0; index < board.length; index++) {
             for (int column = 0; column < board[index].length; column++) {
-                System.out.print(board[index][column] + " ");
+                if (board[index][column] == Value.EMPTY) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print(board[index][column] + " ");
+                }
             }
             System.out.println();
         }
@@ -43,12 +47,20 @@ public class TicTacToe {
                     System.out.println("player " + status + " is the winner");
                     break;
                 }
+                if (isFull()) {
+                    System.out.println("its a draw");
+                    break;
+                }
             } else {
                 Value status = Value.O;
                 playerPlayed(status);
                 displayBoard();
                  if (checkIfWon(status)) {
                     System.out.println("player " + status + " is the winner");
+                    break;
+                }
+                if (isFull()) {
+                    System.out.println("its a draw");
                     break;
                 }
             }
@@ -92,5 +104,22 @@ public class TicTacToe {
             }
         }          
       return value;
+    }
+    
+    
+    public static boolean isFull() {
+        int count = 0;
+        for (int row = 0; row < board.length; row++) {
+            for (int column = 0; column < board[row].length; column++) {
+                if (board[row][column] != Value.EMPTY) {
+                    count++;
+                }
+            }
+        }
+        if (count == 9) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
