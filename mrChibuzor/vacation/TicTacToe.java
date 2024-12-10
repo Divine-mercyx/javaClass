@@ -39,10 +39,18 @@ public class TicTacToe {
                 Value status = Value.X;
                 playerPlayed(status);
                 displayBoard();
+                if (checkIfWon(status)) {
+                    System.out.println("player " + status + " is the winner");
+                    break;
+                }
             } else {
                 Value status = Value.O;
                 playerPlayed(status);
                 displayBoard();
+                 if (checkIfWon(status)) {
+                    System.out.println("player " + status + " is the winner");
+                    break;
+                }
             }
             count++;
         }
@@ -73,7 +81,16 @@ public class TicTacToe {
         }
     }
     
-    public static void checkIfWon() {
-    
+    public static boolean checkIfWon(Value status) {
+        boolean value = false;
+        for (int row = 0; row < board.length; row++) {
+            if (board[row][0] == status && board[row][1] == status && board[row][2] == status ||
+                board[0][row] == status && board[1][row] == status && board[2][row] == status ||
+                board[0][2] == status && board[1][1] == status && board[2][0] == status||
+                board[0][0] == status && board[1][1] == status && board[2][2] == status) {
+                value = true;
+            }
+        }          
+      return value;
     }
 }
