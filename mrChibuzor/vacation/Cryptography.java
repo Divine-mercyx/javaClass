@@ -1,21 +1,10 @@
 import java.util.Scanner;
 
 
-public class Cyptography {
-
-    public static void main(String... args) {
-        Scanner input = new Scanner(System.in);
-        
-        System.out.print("enter message to encrypt: ");
-        String message = input.nextLine();
-        System.out.print("enter key: ");
-        int key = input.nextInt();
-        String encrypted = encrypt(message, key);
-        decrypt(encrypted, key);
-    }
+public class Cryptography {
     
     
-    public static String encrypt(String message, int key) {
+    public String encrypt(String message, int key) {
             String encrypted = "";
             
             for (int index = 0; index < message.length(); index++) {
@@ -28,7 +17,7 @@ public class Cyptography {
     }
     
     
-    public static void decrypt(String encrypted, int key) {
+    public String decrypt(String encrypted, int key) {
         String decrypted = "";
             
             for (int index = 0; index < encrypted.length(); index++) {
@@ -37,7 +26,7 @@ public class Cyptography {
             }
             
             System.out.println(decrypted);
-        
+            return decrypted;
     }
     
     
