@@ -34,10 +34,35 @@ public class HugeInteger {
     }
     
     
+    public boolean isEqualTo(HugeInteger otherNumber) {
+        for (int index = 0; index < otherNumber.hugeInteger.length; index++) {
+            if (this.hugeInteger[index] != otherNumber.hugeInteger[index]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    public boolean isNotEqualTo(HugeInteger otherNumber) {
+        return !isEqualTo(otherNumber);
+    }
+    
+    public boolean isGreaterThan(HugeInteger otherNumber) {
+        for (int index = 0; index < otherNumber.hugeInteger.length; index++) {
+            if (this.hugeInteger[index] > otherNumber.hugeInteger[index]) {
+                  return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+    
+    
     public static void main(String... args) {
         HugeInteger example = new HugeInteger("0023");
-        HugeInteger example2 = new HugeInteger("0023");
-        int sum = example.add(example2);
-        System.out.println(sum);
+        HugeInteger example2 = new HugeInteger("1023");
+        boolean value = example.isGreaterThan(example2);
+        System.out.println(value);
     }
 }
