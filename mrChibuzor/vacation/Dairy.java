@@ -58,12 +58,18 @@ public class Dairy {
         if (entry != null && !isLocked) {
             entries.remove(entry);
             System.out.println("entry has been deleted");
+        } else {
+            System.out.println("entry is null or diary is locked");
         }
     }
     
     
     public void viewEntry(String id) {
         DiaryEntry entry = findEntryById(id);
-        System.out.printf("entry %s: %s", entry.getId(), entry.getContent());
+        if (entry != null && !isLocked) {
+            System.out.printf("entry %s: %s", entry.getId(), entry.getContent());
+        } else {
+            System.out.println("entry is null or diary is locked");
+        }
     }
 }
