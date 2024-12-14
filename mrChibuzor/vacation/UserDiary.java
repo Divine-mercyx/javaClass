@@ -1,3 +1,3 @@
-public class UserDiary {
+public class User {
 
 }

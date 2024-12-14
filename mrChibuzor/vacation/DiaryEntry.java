@@ -4,7 +4,7 @@ public class DiaryEntry {
     private String content;
     
     
-    public Diary(String id, String content) {
+    public DiaryEntry(String id, String content) {
         this.id = id;
         this.content = content;
     }
@@ -15,6 +15,10 @@ public class DiaryEntry {
     
     public String getContent() {
         return content;
+    }
+    
+    public void setContent(String content) {
+        this.content = content;
     }
 
 }
