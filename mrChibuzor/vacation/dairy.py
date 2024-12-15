@@ -12,9 +12,10 @@ class Dairy:
     def lock(self):
         self.isLocked = True
         
+        
     def unlock(self):
         self.isLocked = False
-    
+        
     
     def add_new_entry(self, content_id, content):
         if self.isLocked == False:
@@ -40,12 +41,17 @@ class Dairy:
             print("entry is null or dairy is locked")
             
             
+    def delete_entry(self, content_id):
+        entry = self.find_by_id(content_id)
+        self.entries.remove(entry)
         
+            
     def view_entry(self, content_id):
         if self.isLocked == False:
-            for entry in self.entries:
-                if entry.get_content_id() == content_id:
-                    print(entry.get_content())
+            entry = self.find_by_id(content_id)
+            if entry != None:
+                print(entry.get_content())
+            else: print("entry is empty")
         else: print("dairy is locked")
         
 
