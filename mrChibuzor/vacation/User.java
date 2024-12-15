@@ -1,9 +1,31 @@
 public class User {
 
     private Dairy dairy;
+    private String firstName;
+    private String lastName;
 
-    public User() {
+    public User(String first, String last) {
+        setFirstName(first);
+        setLastName(last);
         this.dairy = new Dairy();
+    }
+    
+    public void setFirstName(String first) {
+        if (first != null && first.length() != 0) {
+            firstName = first;
+        }
+        else {
+            throw new IllegalArgumentException("first name is either null or it is an empty string");
+        }
+    }
+    
+    public void setLastName(String last) {
+        if (last != null && last.length() != 0) {
+            lastName = last;
+        }
+        else {
+            throw new IllegalArgumentException("last name is either null or it is an empty string");
+        }
     }
     
     public void createDairy() {
