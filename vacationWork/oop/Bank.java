@@ -116,8 +116,27 @@ public class Bank {
             case 3 -> withdraw(account);
             case 4 -> checkBalance(account);
             case 5 -> transfer(account);
+            case 6 -> changePin(account);
             case 7 -> logout();
         }
+    }
+    
+    
+    public void changePin(Account account) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter old pin: ");
+        String oldPin = input.nextLine();
+        System.out.print("enter new pin: ");
+        String newPin = input.nextLine();
+        if (account.getPin().equals(oldPin)) {
+             account.setPin(newPin);
+             System.out.println("pin updated");
+             displayAccountPage(account);
+        } else {
+            System.out.println("incorrect pin");
+            displayAccountPage(account);
+        }
+       
     }
     
     
@@ -180,6 +199,7 @@ public class Bank {
     
     public void closeAccount(Account account) {
         accounts.remove(account);
+        welcomePage();
     }
 
 

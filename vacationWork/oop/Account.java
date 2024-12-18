@@ -51,7 +51,7 @@ public class Account {
     }
     
     
-    private void setFullName(String fullName) {
+    public void setFullName(String fullName) {
         this.fullName = fullName;
     }
     
@@ -61,7 +61,7 @@ public class Account {
     }
     
     
-    private void setNumber(String number) {
+    public void setNumber(String number) {
         this.number = number;
     }
     
@@ -71,7 +71,7 @@ public class Account {
     }
     
     
-    private void setPin(String pin) {
+    public void setPin(String pin) {
         this.pin = pin;
     }
     
