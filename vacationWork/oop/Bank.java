@@ -46,7 +46,7 @@ public class Bank {
         switch (choice) {
             case 1 -> createAccount();
             case 2 -> login();
-            //case 3 ->;
+            case 3 -> System.out.println("exited...");;
         }
     }
     
