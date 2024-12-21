@@ -31,6 +31,8 @@ public class ExceptionHandling {
                 System.out.println("Exception: " + arithmeticException);
                 input.nextLine();
                 System.out.println("denominators should not be zero");
+            } finally {
+                System.out.println("this still got printed out");
             }
         } while (continueLoop);
     }
