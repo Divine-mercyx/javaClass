@@ -32,7 +32,15 @@ public class CommissionEmployee {
     }
     
     private void setSocialSecurityNumber(String ssn) {
-        if (ssn.length() == 9) {
+        if (ssn.matches("\\d{3}-\\d{3}--\\d{3}")) {
+            socialSecurityNumber = ssn;
+        } else {
+            throw new IllegalArgumentException("ssn is not valid, length less than 9");
+        }
+    }
+    
+    private void setSocialSecurityNumber(String ssn) {
+        if (ssn.matches("\\d{9}")) {
             socialSecurityNumber = ssn;
         } else {
             throw new IllegalArgumentException("ssn is not valid, length less than 9");

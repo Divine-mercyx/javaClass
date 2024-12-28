@@ -4,25 +4,25 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class MenstrualApp {
+    int months;
+    int days;
+    int years;
 
     public static void main(String... args) {
         Scanner input = new Scanner(System.in);
         MenstrualApp person = new MenstrualApp();
-        
         System.out.print("enter your name: ");
         String name = input.nextLine();
         person.displayMenstrualInfo(name, input);
     }
 
     public void displayMenstrualInfo(String name, Scanner input) {
-        System.out.println("\033[93mHello " + name + "\033[0m");
-        delay();
+        System.out.println("\033[93mHello " + name + "\033[0m"); delay();
         System.out.println("""
         \033[93m
         Average Cycle Length: The average menstrual cycle lasts 28 days,\nbut it can range from 21 to 35 days and still be considered normal.
         \033[0m
-        """);
-        delay();
+        """); delay();
         System.out.println("""
         \033[93m
         Phases of the Cycle: The menstrual cycle has four phases:
@@ -36,14 +36,12 @@ public class MenstrualApp {
     }
     
         private void displayMenstrualInfoTwo(String name, Scanner input) {
-            System.out.println("\033[93mWelcome back " + name + "\033[0m");
-            delay();
+            System.out.println("\033[93mWelcome back " + name + "\033[0m");  delay();
             System.out.println("""
             \033[93m
             Average Cycle Length: The average menstrual cycle lasts 28 days,\nbut it can range from 21 to 35 days and still be considered normal.
             \033[0m
-            """);
-            delay();
+            """); delay();
             System.out.println("""
             \033[93m
             Phases of the Cycle: The menstrual cycle has four phases:
@@ -82,53 +80,42 @@ public class MenstrualApp {
 
     private int[] getInputDate(Scanner input) {  
         System.out.print("Enter the month: ");  
-        int month = input.nextInt();  
+        this.months = input.nextInt();  
         System.out.print("Enter the day: ");  
-        int day = input.nextInt();  
+        this.days = input.nextInt();  
         System.out.print("Enter the year: ");  
-        int year = input.nextInt();  
-        return new int[]{month, day, year};  
+        this.years = input.nextInt();  
+        return new int[]{this.months, this.days, this.years};  
     }  
 
     private void calculateAndDisplayNextFlowDate(int month, int day, int year, String name, Scanner input) {  
         Calendar cal = Calendar.getInstance();  
         cal.set(year, month - 1, day); 
-
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");  
-         
-
         cal.add(Calendar.DAY_OF_MONTH, 28); 
         String nextFlowDate = dateFormat.format(cal.getTime());  
-
         System.out.println("Next flow date will be in 28 days: " + nextFlowDate +  " (the range might differ, sometimes over or under 28 days)");  
-        
         displayChoice(name, input);
     }  
 
-    private void calculateSafePeriods(String name, Scanner input) {  
-        int[] date = getInputDate(input);  
-        displaySafePeriods(date[0], date[1], date[2]);  
+    private void calculateSafePeriods(String name, Scanner input) { 
+        displaySafePeriods(this.months, this.days, this.years);  
         displayChoice(name, input);  
     }  
 
     private void displaySafePeriods(int month, int day, int year) {  
         Calendar cal = Calendar.getInstance();  
         cal.set(year, month - 1, day);  
-        
-
         cal.add(Calendar.DAY_OF_MONTH, 7);
         String endOfFlow = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
-
         cal.add(Calendar.DAY_OF_MONTH, 7);
-        String startOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());  
-
+        String startOfOvulation = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime()); 
         System.out.println("Safe Period:");  
         System.out.println("From: " + endOfFlow + " to: " + startOfOvulation + " (before ovulation)");
     }  
 
     public static void delay() {
-        for (double delay = 0; delay < 1000000002; delay++) {
-        }
+        for (double delay = 0; delay < 1000000002; delay++) {}
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }

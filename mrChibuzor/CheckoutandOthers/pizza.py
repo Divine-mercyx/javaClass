@@ -33,4 +33,4 @@ def display_order_details(size: int, pizza_type: str, pizza_slice: int, amount: 
     print(f"price = {(boxes * amount)} (explanation {amount} per box for {boxes} boxes");
     
     
-display_questions(45, "odogwu")
+print(display_questions(-45, "odogwu"))

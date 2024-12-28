@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ExceptionHandlings {
     
-    /*public static int getQuotient(int numerator, int denominator) {
+    /*public static int getQuotient(int numerator, int denominator) {/home/divine-mercy/javaClass/vacationWork/polymorphism
         throws ArithmeticException 
         {
             return numerator / denominator;

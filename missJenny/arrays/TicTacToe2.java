@@ -8,16 +8,13 @@ public class TicTacToe2 {
         
         String playerO = "\033[36mO\033[0m";
         String playerX  = "\033[32mX\033[0m";
-        
         boolean gameIsWon = false;
         int count = 0;
-        
         String[] tictactoe = {" ", " ", " ", " ", " ", " ", " ", " ", " "};
-
         displayBoard(tictactoe);
         
-        while (count < 9 && !gameIsWon) {
         
+        while (count < 9 && !gameIsWon) {
             do {
             
                 System.out.print("\033[32mPlayer X\033[0m: where do you want to play (1 - 9): ");
