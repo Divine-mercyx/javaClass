@@ -12,12 +12,14 @@ public class Dairy {
     
     public void createNewEntry(String id, String content) {
         if (!isLocked) {
-            entries.add(new DiaryEntry(id, content));
+            DiaryEntry entry = new DiaryEntry(id, content);
+            entries.add(entry);
             System.out.println("added new entry");
         } else {
             System.out.println("Dairy is locked");
         }
     }
+
     
     public void createDiary() {
         System.out.println("new diary created");
@@ -32,7 +34,8 @@ public class Dairy {
         isLocked = true;
         System.out.println("dairy has been locked");
     }
-    
+
+
     public DiaryEntry findEntryById(String id) {
         for (DiaryEntry entry : entries)  {
             if (entry.getId().equals(id)) {
@@ -52,7 +55,8 @@ public class Dairy {
             System.out.println("entry is null or diary is locked");
         }
     }
-    
+
+
     public void deleteEntry(String id) {
         DiaryEntry entry = findEntryById(id);
         if (entry != null && !isLocked) {

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab8b7cdb-d3fb-4f92-9d6c-0498bba2d733" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../javaClass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../refactoredPhaseGate/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../refactoredPhaseGate/src/StudentGrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/vacation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/vacation2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompoundInterestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vacation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../out/production/javaClass/javaClass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../out/production/javaClass/vacationWork/oop/oop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../vacationWork/oop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../vacationWork/oop/oop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../vacationWork/oop/out/production/oop/vacationWork/oop/oop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../missJenny/arrays/ExceptionHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CheckoutandOthers/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CheckoutandOthers/Checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CheckoutandOthers/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CheckoutandOthers/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/StudentGrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/StudentGrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/StudentGradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/StudentGradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/oldSnack/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/oldSnack/Checkout1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/oldSnack/Mbti.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/oldSnack/Mbti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/oldSnack/StudentGrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/oldSnack/StudentGrades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phaseGateOne/oldSnack/StudentGradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phaseGateOne/oldSnack/StudentGradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompoundInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompoundInterest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dairy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dairy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserDiary.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Divine-mercyx"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Divine-mercyx/javaClass.git",
+    "accountId": "5b3ccc72-7194-43a6-98bc-a197902f62b6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2qtbDasnfKsVW6dB51JAAOLY4hB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CompoundInterest.executor": "Run",
+    "Application.DairyTest.executor": "Run",
+    "Application.TicTacToe.executor": "Run",
+    "JUnit.CompoundInterestTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+      <recent name="mrChibuzor.vacation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DairyTest">
+    <configuration name="DairyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DairyTest" />
+      <module name="vacation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompoundInterestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vacation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompoundInterestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DairyTest" />
+        <item itemvalue="JUnit.CompoundInterestTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab8b7cdb-d3fb-4f92-9d6c-0498bba2d733" name="Changes" comment="" />
+      <created>1735484701974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735484701974</updated>
+      <workItem from="1735484702875" duration="3885000" />
+      <workItem from="1735579469358" duration="2614000" />
+      <workItem from="1735805256650" duration="3600000" />
+      <workItem from="1735842958650" duration="41000" />
+      <workItem from="1735922368635" duration="3319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

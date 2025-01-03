@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package oldSnack;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -7,11 +8,11 @@ public class StudentGradeTest {
     
     @Test
     public void TestThatStudentsNumberAndSubjectNumberExist() {
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrades studentGrade = new StudentGrades();
     }
     @Test
     public void getReturnedStudentsNumberAndSubjectNumber() {
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrades studentGrade = new StudentGrades();
         int studentNumber = 5;
         int subjectNumber = 5;
         int[] actual = studentGrade.getNumberOfStudentsAndSubjects(studentNumber, subjectNumber);
@@ -21,7 +22,7 @@ public class StudentGradeTest {
     
     @Test
     public void checkIfcollectScoresForEveryStudentAndSubjectReturns2DArray() {
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrades studentGrade = new StudentGrades();
         int[] numbers = {3, 3};
         int[][] actual = studentGrade.collectScoresForEveryStudentAndSubject(numbers);
         int[][] expected = new int[3][3];

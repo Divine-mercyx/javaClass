@@ -1,7 +1,9 @@
+package oldSnack;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Checkout {
+public class Checkout1 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

@@ -20,18 +20,18 @@ public class CompoundInterest {
         boolean continueLoop = true;
         do {
             try {
-                System.out.print("Enter initial investment: ");
+                System.out.println("Enter initial investment: ");
                 double initialInvestment = input.nextDouble();
-                System.out.print("Enter monthly contribution: ");
+                System.out.println("Enter monthly contribution: ");
                 double monthlyContribution = input.nextDouble();
-                System.out.print("Enter length of time in years: ");
+                System.out.println("Enter length of time in years: ");
                 int lengthOfTimeInYears = input.nextInt();
-                System.out.print("enter estimated interest rate: ");
+                System.out.println("enter estimated interest rate: ");
                 double estimatedInterestRate = input.nextDouble();
-                System.out.print("Enter compound frequency: ");
+                System.out.println("Enter compound frequency: ");
                 int compoundFrequency = input.nextInt();
                 double compoundInterest = getCompoundInterest(initialInvestment, monthlyContribution, lengthOfTimeInYears, estimatedInterestRate, compoundFrequency);
-                System.out.printf("\nCompound Interest: %.2f\n", compoundInterest);
+                System.out.printf("\nCompound Interest: %f\n", compoundInterest);
                 continueLoop = false;
             }
             catch (InputMismatchException e) {

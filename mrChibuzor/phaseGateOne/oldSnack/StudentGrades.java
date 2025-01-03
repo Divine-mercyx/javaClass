@@ -1,11 +1,12 @@
-import java.util.Scanner;
-import java.util.Arrays;
+package oldSnack;
 
-public class StudentGrade {
+import java.util.Scanner;
+
+public class StudentGrades {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrades studentGrade = new StudentGrades();
         
         System.out.print("enter how many students: ");
         int student_number = input.nextInt();
@@ -51,7 +52,7 @@ public class StudentGrade {
         return numbers;
     }
     
-    public void clear_space() {
+    public void clearSpace() {
         System.out.print("\033[H\033[2J"); 
         System.out.flush();
     }

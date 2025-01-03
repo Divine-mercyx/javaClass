@@ -1,3 +1,5 @@
+package mrChibuzor.CheckoutandOthers;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

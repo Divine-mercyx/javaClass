@@ -1,11 +1,13 @@
+
+
 import java.util.Scanner;
-import java.util.Arrays;
+
 
 public class StudentGrade {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrades studentGrade = new StudentGrades();
         
         System.out.print("enter how many students: ");
         int student_number = input.nextInt();
