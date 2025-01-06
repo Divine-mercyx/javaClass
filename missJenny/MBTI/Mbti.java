@@ -1,14 +1,14 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Project {
+public class Mbti {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
 		String personality = "";
 		String personalityA = "";
 		String[] answer = new String[4];
-		String[] store = new String[20];
+		String[] storeQuestions = new String[20];
 
 		String[][] questions = {
 		{"A. Expend energy, enjoy groups", "\t\tB. conserve energy, enjoy one on one\n"},
@@ -62,23 +62,17 @@ public class Project {
 		for (int section = 0; section < 4; section++) {
 
 			 for (int question = section; question < questions.length; question += 4) {
-
                 displayQuestions(questions, question, 0, 1);
-           		 	//System.out.print(questions[question][0]);
-           		 	//System.out.print(questions[question][1]);
-
-			        	System.out.print("\nresponse >>> ");
-			          String response = input.nextLine();
-			          System.out.print("\033[H\033[2J"); 
-                System.out.flush();
+					System.out.print("\nresponse >>> ");
+					String response = input.nextLine();
 
 
 			        if (response.equalsIgnoreCase("A") || response.equalsIgnoreCase("B")) {
 					            if (response.equalsIgnoreCase("A")) {
-						            store[question] = questions[question][0];
+						            storeQuestions[question] = questions[question][0];
 						            numberOfA[section]++;
 					            } else {
-						            store[question] = questions[question][1];
+						            storeQuestions[question] = questions[question][1];
 						            numberOfB[section]++;
 					            }
 				
@@ -106,9 +100,9 @@ public class Project {
 		if (reply.equalsIgnoreCase("yes")) {
 			System.out.println("\nHello " + username + " you selected: \n");
 
-			for (String quest : store) {
-				if (quest != null) {
-					System.out.println(quest.trim());
+			for (String question : storeQuestions) {
+				if (question != null) {
+					System.out.println(question.trim());
 				}
 			}
 			for (String characters : answer) {
