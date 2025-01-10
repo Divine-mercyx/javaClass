@@ -4,10 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8b7cdb-d3fb-4f92-9d6c-0498bba2d733" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../missJenny/MBTI/MyArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../missJenny/MBTI/Mbti.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../missJenny/MBTI/Mbti.java" afterDir="false" />
+    <list default="true" id="74bbfdd1-419f-4031-bae5-c3cf88e0e89d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Differenciation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NumberCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NumberCheckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/vacation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/vacation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/vacation2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cryptography.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cryptography.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptographyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CryptographyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dairy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dairy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dairy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DairyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DairyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DairyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiaryEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiaryEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/DiaryEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe$Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vacation/Cryptography.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vacation/CryptographyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vacation/DairyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vacation/TicTacToe$Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vacation/TicTacToe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vacation.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,64 +62,86 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2qtbDasnfKsVW6dB51JAAOLY4hB" />
+  <component name="ProjectId" id="2rIlQVmDwMkWOcWBn0nhfhjEcR7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CompoundInterest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DairyTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TicTacToe.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CompoundInterestTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DairyTest.executor": "Run",
+    "Application.Differenciation.executor": "Run",
+    "Application.NumberCheck.executor": "Run",
+    "Application.Quiz.executor": "Run",
+    "Application.TicTacToe.executor": "Run",
+    "JUnit.NumberCheckTest.executor": "Run",
+    "JUnit.NumberCheckTest.testNumberCheck.executor": "Run",
+    "JUnit.NumberCheckTest.testNumberOfPositiveANdNegativeAndZero.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-      <recent name="mrChibuzor.vacation" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.DairyTest">
-    <configuration name="DairyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DairyTest" />
+}]]></component>
+  <component name="RunManager">
+    <configuration name="NumberCheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vacation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrChibuzor.vacation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrChibuzor.vacation" />
+      <option name="MAIN_CLASS_NAME" value="mrChibuzor.vacation.NumberCheckTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompoundInterestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumberCheckTest.testNumberCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vacation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CompoundInterestTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrChibuzor.vacation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrChibuzor.vacation" />
+      <option name="MAIN_CLASS_NAME" value="mrChibuzor.vacation.NumberCheckTest" />
+      <option name="METHOD_NAME" value="testNumberCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberCheckTest.testNumberOfPositiveANdNegativeAndZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vacation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrChibuzor.vacation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrChibuzor.vacation" />
+      <option name="MAIN_CLASS_NAME" value="mrChibuzor.vacation.NumberCheckTest" />
+      <option name="METHOD_NAME" value="testNumberOfPositiveANdNegativeAndZero" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DairyTest" />
-        <item itemvalue="JUnit.CompoundInterestTest" />
+        <item itemvalue="JUnit.NumberCheckTest.testNumberCheck" />
+        <item itemvalue="JUnit.NumberCheckTest.testNumberOfPositiveANdNegativeAndZero" />
+        <item itemvalue="JUnit.NumberCheckTest" />
       </list>
     </recent_temporary>
   </component>
@@ -111,18 +156,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab8b7cdb-d3fb-4f92-9d6c-0498bba2d733" name="Changes" comment="" />
-      <created>1735484701974</created>
+      <changelist id="74bbfdd1-419f-4031-bae5-c3cf88e0e89d" name="Changes" comment="" />
+      <created>1736254455221</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1735484701974</updated>
-      <workItem from="1735484702875" duration="3885000" />
-      <workItem from="1735579469358" duration="2614000" />
-      <workItem from="1735805256650" duration="3600000" />
-      <workItem from="1735842958650" duration="41000" />
-      <workItem from="1735922368635" duration="3319000" />
-      <workItem from="1736076045428" duration="694000" />
-      <workItem from="1736090738514" duration="5869000" />
+      <updated>1736254455221</updated>
+      <workItem from="1736254456342" duration="6517000" />
+      <workItem from="1736327886209" duration="21039000" />
     </task>
     <servers />
   </component>

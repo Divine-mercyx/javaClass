@@ -1,3 +1,5 @@
+package mrChibuzor.vacation;
+
 public class DiaryEntry {
 
     private String id;

@@ -1,3 +1,5 @@
+package mrChibuzor.vacation;
+
 public class User {
 
     private Dairy dairy;
@@ -53,6 +55,10 @@ public class User {
     }
     
     public void findEntry(String id) {
+        dairy.viewEntry(id);
+    }
+
+    public void viewEntry(String id) {
         dairy.viewEntry(id);
     }
 }

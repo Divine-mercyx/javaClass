@@ -1,3 +1,5 @@
+package mrChibuzor.vacation;
+
 import java.util.ArrayList;
 
 public class Dairy {
@@ -73,7 +75,7 @@ public class Dairy {
         if (entry != null && !isLocked) {
             System.out.printf("entry %s: %s", entry.getId(), entry.getContent());
         } else {
-            System.out.println("entry is null or diary is locked");
+            System.out.println("\nentry is null or diary is locked");
         }
     }
 }

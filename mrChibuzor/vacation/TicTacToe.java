@@ -1,11 +1,13 @@
-import java.util.Arrays;
+package mrChibuzor.vacation;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TicTacToe {
 
 
 
-    static enum Value {X, O, EMPTY}
+    enum Value {X, O, EMPTY}
     static private Value[][] board = new Value[3][3];
     
     public TicTacToe() {
@@ -23,6 +25,7 @@ public class TicTacToe {
         playerMoves();
     }
     
+    
     public static void displayBoard() {
         for (int index = 0; index < board.length; index++) {
             for (int column = 0; column < board[index].length; column++) {
@@ -31,11 +34,19 @@ public class TicTacToe {
                 } else {
                     System.out.print(board[index][column] + " ");
                 }
+                
+                if (column < board[index].length - 1) {
+                    System.out.print("| ");
+                }
             }
             System.out.println();
+            if (index < board.length - 1) {
+                System.out.println("---------");
+            }
         }
     }
-    
+
+
     public static void playerMoves() {
         int count = 1;
         while (count <= 9) {
@@ -73,10 +84,16 @@ public class TicTacToe {
         Scanner input = new Scanner(System.in);
         int choice = 0;
         do {
-            System.out.print("player " + status + ": play in (1 - 9): ");
-            choice = input.nextInt();
-            if (choice <= 0 || choice > 9) {
+            try {
+                System.out.print("player " + status + ": play in (1 - 9): ");
+                choice = input.nextInt();
+                if (choice <= 0 || choice > 9) {
+                    System.out.println("invalid, try again.");
+                }
+            }
+            catch (InputMismatchException e) {
                 System.out.println("invalid, try again.");
+                input.nextLine();
             }
         } while (choice <= 0 || choice > 9);
         addToBoard(status, choice);

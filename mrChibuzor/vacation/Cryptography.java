@@ -1,3 +1,5 @@
+package mrChibuzor.vacation;
+
 import java.util.Scanner;
 
 
