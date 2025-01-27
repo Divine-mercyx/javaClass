@@ -1,4 +1,4 @@
-package queue;
+package mrChibuzor.queue.src.queue;
 
 public class Queue {
     private int size;

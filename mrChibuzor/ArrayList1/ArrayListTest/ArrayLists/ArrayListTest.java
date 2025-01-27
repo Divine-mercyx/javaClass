@@ -1,5 +1,6 @@
-package ArrayLists;
+package mrChibuzor.ArrayList1.ArrayListTest.ArrayLists;
 
+import mrChibuzor.ArrayList1.src.ArrayLists.ArrayList1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

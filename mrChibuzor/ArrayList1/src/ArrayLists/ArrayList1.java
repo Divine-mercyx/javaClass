@@ -1,4 +1,4 @@
-package ArrayLists;
+package mrChibuzor.ArrayList1.src.ArrayLists;
 
 import java.util.Objects;
 

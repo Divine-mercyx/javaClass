@@ -1,4 +1,4 @@
-package myBike;
+package mrChibuzor.Bike.src.myBike;
 
 public class Bike {
     private int speed;

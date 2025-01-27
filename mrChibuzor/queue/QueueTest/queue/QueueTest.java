@@ -1,5 +1,6 @@
-package queue;
+package mrChibuzor.queue.QueueTest.queue;
 
+import mrChibuzor.queue.src.queue.Queue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

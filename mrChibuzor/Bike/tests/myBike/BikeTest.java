@@ -1,4 +1,4 @@
-package myBike;
+package mrChibuzor.Bike.tests.myBike;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
