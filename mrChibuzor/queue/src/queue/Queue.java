@@ -2,11 +2,15 @@ package queue;
 
 public class Queue {
     private int size;
-    private String[] elements = new String[3];
+    private String[] elements;
+
+    public Queue(int size) {
+        elements = new String[size];
+    }
 
 
     public void enqueue(String element) {
-        elements[size++] = element;
+        if (size != elements.length) elements[size++] = element;
     }
 
     public boolean isEmpty() {
@@ -18,7 +22,7 @@ public class Queue {
     }
 
     public int size() {
-        return size;
+        return elements.length;
     }
 
     public void dequeue() {

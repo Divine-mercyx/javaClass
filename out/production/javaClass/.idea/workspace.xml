@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76d5c96f-1062-45e3-98f4-6e58e87f72be" name="Changes" comment="arraylist data structure assignment and queue data sturcture">
+      <change beforePath="$PROJECT_DIR$/mrChibuzor/ArrayList1/ArrayListTest/ArrayLists/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mrChibuzor/ArrayList1/ArrayListTest/ArrayLists/ArrayListTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Divine-mercyx&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Divine-mercyx/javaClass.git",
+    "accountId": "f898f2c8-b7ba-4f13-9e1d-8d8ecf3a8e4f"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2qm6zsrWWD9Gp8RHhFfxVadqd3a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Bank.executor": "Run",
+    "Application.Checkout1.executor": "Run",
+    "Application.CompoundInterest.executor": "Run",
+    "Application.Duplicate.executor": "Run",
+    "Application.ExceptionHandlings.executor": "Run",
+    "Application.HugeInteger.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Power.executor": "Run",
+    "Application.Project.executor": "Run",
+    "Application.StudentGrade.executor": "Run",
+    "Application.Test.executor": "Run",
+    "JUnit.ArrayListTest.executor": "Coverage",
+    "JUnit.CheckoutTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/divineboss/IdeaProjects/queue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vacationWork/polymorphism" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="Duplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Duplicate" />
+      <module name="javaClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vacationWork.oop.Main" />
+      <module name="javaClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vacationWork.oop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentGrade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StudentGrade" />
+      <module name="javaClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrChibuzor.ArrayList1.ArrayListTest.ArrayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrChibuzor.ArrayList1.ArrayListTest.ArrayLists" />
+      <option name="MAIN_CLASS_NAME" value="mrChibuzor.ArrayList1.ArrayListTest.ArrayLists.ArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="Application.StudentGrade" />
+        <item itemvalue="Application.Duplicate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76d5c96f-1062-45e3-98f4-6e58e87f72be" name="Changes" comment="" />
+      <created>1735255670626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735255670626</updated>
+      <workItem from="1735255678211" duration="614000" />
+      <workItem from="1735366113590" duration="4407000" />
+      <workItem from="1735403968019" duration="4084000" />
+      <workItem from="1735475470915" duration="7049000" />
+      <workItem from="1735579466657" duration="781000" />
+      <workItem from="1735843038365" duration="79000" />
+      <workItem from="1736254418353" duration="2104000" />
+      <workItem from="1736327895991" duration="3804000" />
+      <workItem from="1736431412880" duration="3762000" />
+      <workItem from="1737461559937" duration="2603000" />
+      <workItem from="1737531393089" duration="4144000" />
+    </task>
+    <task id="LOCAL-00001" summary="updating oop folder, adding University.java Student.java main.java and Professor.java to opp folder">
+      <option name="closed" value="true" />
+      <created>1735368952037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735368952037</updated>
+    </task>
+    <task id="LOCAL-00002" summary="aircondition assignment update">
+      <option name="closed" value="true" />
+      <created>1737461846936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737461846936</updated>
+    </task>
+    <task id="LOCAL-00003" summary="aircondition assignment update">
+      <option name="closed" value="true" />
+      <created>1737462056333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737462056333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="aircondition assignment update - new one">
+      <option name="closed" value="true" />
+      <created>1737462318973</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737462318973</updated>
+    </task>
+    <task id="LOCAL-00005" summary="arraylist data structure assignment">
+      <option name="closed" value="true" />
+      <created>1737531521154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737531521154</updated>
+    </task>
+    <task id="LOCAL-00006" summary="arraylist data structure assignment and queue data sturcture">
+      <option name="closed" value="true" />
+      <created>1737532105386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737532105386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updating oop folder, adding University.java Student.java main.java and Professor.java to opp folder" />
+    <MESSAGE value="aircondition assignment update" />
+    <MESSAGE value="aircondition assignment update - new one" />
+    <MESSAGE value="arraylist data structure assignment" />
+    <MESSAGE value="arraylist data structure assignment and queue data sturcture" />
+    <option name="LAST_COMMIT_MESSAGE" value="arraylist data structure assignment and queue data sturcture" />
+  </component>
+</project>

@@ -10,7 +10,7 @@ public class QueueTest {
 
     @BeforeEach
     public void setUp() {
-        queue = new Queue();
+        queue = new Queue(3);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class QueueTest {
         queue.enqueue("girl");
         assertEquals("girl", queue.element(1));
         assertFalse(queue.isEmpty());
-        assertEquals(2, queue.size());
+        assertEquals(3, queue.size());
     }
 
     @Test
@@ -38,7 +38,7 @@ public class QueueTest {
         queue.enqueue("boy");
         queue.enqueue("girl");
         queue.dequeue();
-        assertEquals(1, queue.size());
+        assertEquals(3, queue.size());
         assertEquals("girl", queue.element(0));
     }
 
