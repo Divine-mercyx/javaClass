@@ -58,6 +58,7 @@ public class Bank {
     }
 
     public void transfer(String sender, String recipient, int amount, String pin) {
+        if (sender.equals(recipient)) throw new IllegalArgumentException("sender is the same as recipient");
         Account senderAccount = findAccount(sender);
         Account recipientAccount = findAccount(recipient);
         if (senderAccount == null || recipientAccount == null) throw new IllegalArgumentException();
