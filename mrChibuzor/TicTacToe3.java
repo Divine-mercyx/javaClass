@@ -1,7 +1,9 @@
+package mrChibuzor;
+
 import java.util.Scanner;
 import java.util.Random;
 
-public class TicTacToe {
+public class TicTacToe3 {
     public static void main(String... args) {
       Scanner input = new Scanner(System.in);
       Random myrand = new Random();

@@ -1,4 +1,6 @@
-public class Natural {
+package mrChibuzor;
+
+public class Natural1 {
 	public static void main(String[] args) {
 		int counter = 1;
 		int sum = 0;

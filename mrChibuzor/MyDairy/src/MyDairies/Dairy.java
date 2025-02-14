@@ -1,10 +1,9 @@
-package MyDairies;
+package mrChibuzor.MyDairy.src.MyDairies;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class Dairy {
-    private int id;
     private String fullname;
     private boolean isLocked;
     private String pin;
@@ -15,7 +14,6 @@ public class Dairy {
         entries = new ArrayList<>();
         this.isLocked = false;
         setPin(pin);
-        this.id = 0;
     }
 
     public void lock() {

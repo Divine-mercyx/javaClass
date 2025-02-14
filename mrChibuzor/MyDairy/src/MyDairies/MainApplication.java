@@ -1,4 +1,4 @@
-package MyDairies;
+package mrChibuzor.MyDairy.src.MyDairies;
 
 import javax.swing.*;
 import java.util.Scanner;

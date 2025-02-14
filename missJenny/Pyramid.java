@@ -1,4 +1,6 @@
-public class NumbersPyramid {
+package missJenny;
+
+public class Pyramid {
 	public static void main(String[] args) {
 		
 		for (int count = 1; count <= 7; count++) {

@@ -1,3 +1,5 @@
+package missJenny;
+
 import java.util.Scanner;
 
 public class PositiveNegative {

@@ -1,4 +1,4 @@
-package MyDairies;
+package mrChibuzor.MyDairy.src.MyDairies;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;

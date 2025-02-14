@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76d5c96f-1062-45e3-98f4-6e58e87f72be" name="Changes" comment="update for bank and account class" />
+    <list default="true" id="76d5c96f-1062-45e3-98f4-6e58e87f72be" name="Changes" comment="update for tv set application" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,42 +44,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Bank.executor": "Run",
-    "Application.Checkout1.executor": "Run",
-    "Application.CompoundInterest.executor": "Run",
-    "Application.Duplicate.executor": "Run",
-    "Application.ExceptionHandlings.executor": "Run",
-    "Application.HugeInteger.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Power.executor": "Run",
-    "Application.Project.executor": "Run",
-    "Application.StudentGrade.executor": "Run",
-    "Application.Test.executor": "Run",
-    "JUnit.ArrayListTest.executor": "Coverage",
-    "JUnit.BankTest.executor": "Run",
-    "JUnit.CheckoutTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/divineboss/javaClass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Bank.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Checkout1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CompoundInterest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Duplicate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandlings.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HugeInteger.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Power.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Project.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentGrade.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayListTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.BankTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CheckoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/divineboss/javaClass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vacationWork/polymorphism" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankTest">
+  <component name="RunManager" selected="JUnit.DairyTest">
     <configuration name="Duplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Duplicate" />
       <module name="javaClass" />
@@ -136,8 +137,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DairyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mrChibuzor.MyDairy.tests.MyDairies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mrChibuzor.MyDairy.tests.MyDairies" />
+      <option name="MAIN_CLASS_NAME" value="mrChibuzor.MyDairy.tests.MyDairies.DairyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DairyTest" />
         <item itemvalue="JUnit.BankTest" />
         <item itemvalue="JUnit.ArrayListTest" />
         <item itemvalue="Application.StudentGrade" />
@@ -173,7 +190,11 @@
       <workItem from="1737461559937" duration="2603000" />
       <workItem from="1737531393089" duration="5541000" />
       <workItem from="1737956013566" duration="940000" />
-      <workItem from="1738014898816" duration="854000" />
+      <workItem from="1738014898816" duration="881000" />
+      <workItem from="1738171789978" duration="1306000" />
+      <workItem from="1738576051785" duration="114000" />
+      <workItem from="1738770385414" duration="688000" />
+      <workItem from="1738837243669" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="updating oop folder, adding University.java Student.java main.java and Professor.java to opp folder">
       <option name="closed" value="true" />
@@ -247,7 +268,55 @@
       <option name="project" value="LOCAL" />
       <updated>1738015028956</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update for dairy app">
+      <option name="closed" value="true" />
+      <created>1738171848216</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738171848216</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update for bank app">
+      <option name="closed" value="true" />
+      <created>1738576151246</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738576151246</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update for tv set">
+      <option name="closed" value="true" />
+      <created>1738770428244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738770428244</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update for bank app">
+      <option name="closed" value="true" />
+      <created>1738770457816</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738770457816</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update for tv set application">
+      <option name="closed" value="true" />
+      <created>1738770519744</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738770519744</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update for tv set application">
+      <option name="closed" value="true" />
+      <created>1738770579360</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738770579360</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +330,10 @@
     <MESSAGE value="arraylist data structure assignment and queue data sturcture" />
     <MESSAGE value="adding update fir bike assignment" />
     <MESSAGE value="update for bank and account class" />
-    <option name="LAST_COMMIT_MESSAGE" value="update for bank and account class" />
+    <MESSAGE value="update for dairy app" />
+    <MESSAGE value="update for tv set" />
+    <MESSAGE value="update for bank app" />
+    <MESSAGE value="update for tv set application" />
+    <option name="LAST_COMMIT_MESSAGE" value="update for tv set application" />
   </component>
 </project>

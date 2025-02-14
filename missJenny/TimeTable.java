@@ -1,6 +1,8 @@
+package missJenny;
+
 import java.util.Scanner;
 
-public class WeekDay {
+public class TimeTable {
 	public static void main(String... args) {
 		Scanner input = new Scanner(System.in);
 

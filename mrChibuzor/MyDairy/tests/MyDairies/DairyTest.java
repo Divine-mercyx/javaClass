@@ -1,5 +1,7 @@
-package MyDairies;
+package mrChibuzor.MyDairy.tests.MyDairies;
 
+import mrChibuzor.MyDairy.src.MyDairies.Dairy;
+import mrChibuzor.MyDairy.src.MyDairies.Entry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

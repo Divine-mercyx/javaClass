@@ -1,3 +1,5 @@
+package mrChibuzor.arraysAndFunction;
+
 import java.util.Arrays;
 
 public class PrimeFunction2 {

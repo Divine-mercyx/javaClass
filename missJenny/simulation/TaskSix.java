@@ -1,6 +1,8 @@
+package missJenny.simulation;
+
 import java.util.Scanner;
 
-public class Divisible {
+public class TaskSix {
 	public static void main(String... args) {
 		Scanner input = new Scanner(System.in);
 

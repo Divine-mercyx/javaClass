@@ -1,4 +1,6 @@
-public class Maximum {
+package missJenny.arrays;
+
+public class Maximum1 {
     public static void main(String... args) {
         int[] numbers = {23, 45, 12, 78, 90};
         
